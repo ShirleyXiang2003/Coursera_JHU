@@ -1,0 +1,131 @@
+body {
+    font-family: Jost, sans-serif;
+    font-weight: bolder;
+}
+
+/*** Header *****/
+#header-nav {
+    background-color: darkgray;
+    border-radius: 0;
+    height: auto;
+    border: 2px solid black;
+
+}
+
+#header-nav .container {
+    overflow: hidden;
+}
+
+#header-nav h1 {        /*** Food, LLC ****/
+    font-size: 2.0em;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    float: left;
+    
+}
+
+.navbar-toggle {
+    float: right;
+    height: 45px;
+}
+
+#nav-list a:hover {
+    background: darkgrey;
+}
+
+#nav-list li {
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid black;
+}
+
+/*** End Header ***/
+
+/*** Home Page ****/
+
+#home-page {
+    text-align: center;
+    font-size: 3.0em;
+    margin-top: 20px;
+    font-weight: 100;
+    font-weight: bolder;
+}
+
+#main-content {
+    background-color: darkgray;
+    border: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    width: 96%;
+    height: auto;
+}
+
+#main-content-title {       /* chicken */
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2.0em;
+
+}
+
+#main-content-info {
+    font-size: 1.5em;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+
+/*** End Home Page ***/
+
+/**** Desktop only ****/
+
+@media (min-width: 992px) {
+    #nav-list li {
+        display: none;
+    }
+}
+
+/**** Tablet only ****/
+@media (min-width: 768px) and (max-width: 991px) {
+    #nav-list li {
+        display: none;
+    }
+
+}
+
+
+/**** Mobile only *****/
+@media (max-width: 767px) {
+    #main-content {
+        width: 70%;
+    }
+
+    .navbar-header button.navbar-toggle {
+        clear: both;
+        margin-top: -30px;
+    }
+
+    #collapsable-nav a {  /* Collapsed nav menu text */
+        font-size: 1.2em;
+        color: black;
+
+    }
+
+    #collapsable-nav a span {   /* Collapsed nav menu glyph */
+        font-size: 1em;
+        margin-right: 5px;
+    }
+
+  
+
+}
+
